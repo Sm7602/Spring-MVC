@@ -7,7 +7,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class MyController {
 	@RequestMapping("/")
 	public String greetings() {
-		return "welcome.jsp";
+		System.out.println("done...........................");
+		return "welcome";
 	}
 
 }
