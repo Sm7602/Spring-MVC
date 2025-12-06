@@ -7,6 +7,6 @@
 <title>Spring-mvc</title>
 </head >
 <body bgcolor="red">
-<h1>Hello Spring Mvc</h1>
+<h1>Hello java</h1>
 </body>
 </html>
