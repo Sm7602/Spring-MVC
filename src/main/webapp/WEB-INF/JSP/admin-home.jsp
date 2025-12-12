@@ -8,5 +8,6 @@
 </head>
 <body bgcolor="pink">
 <h1>Hello mai hu admin</h1>
+<h2>userName : ${userName}</h2>
 </body>
 </html>
