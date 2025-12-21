@@ -1,8 +1,9 @@
 package com.spring.mvc.model;
 
 public class Employee {
-	int age;
-	String name;
+	private int id;
+	private int age;
+	private String name;
 	 
 	
 	public Employee() {
@@ -10,11 +11,19 @@ public class Employee {
 		// TODO Auto-generated constructor stub
 	}
 
-	public Employee(String name,   int age) {
+	public Employee(int id,String name,int age) {
 		super();
 		this.name = name;
-		 
+		this.id=id;
 		this.age = age;
+	}
+
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
 	}
 
 	public int getAge() {
@@ -33,12 +42,9 @@ public class Employee {
 		this.name = name;
 	}
 
-	 
-
 	@Override
 	public String toString() {
-		return "Employee [age=" + age + ", name=" + name +   "]";
+		return "Employee [id=" + id + ", age=" + age + ", name=" + name + "]";
 	}
-	
 
 }
