@@ -11,16 +11,12 @@
 	<h2>Employee Form</h2>
 
 	<!-- http://localhost:8080/RadheySpringMvc/ -->
-	<form action="${pageContext.request.contextPath}/getEmp"
+	<form action="${pageContext.request.contextPath}/saveEmp"
 		method="post">
-		<label for="id">Id:</label><input type="text" id="id"
-			name="id" /><br /> <br /> 
 		<label for="name">Name:</label><input type="text" id="name"
 			name="name" />
 			<br /> <br /> 
-			<label for="department">Department:</label><input
-			type="text" id="department" name="department" /><br /> <br /> <label
-			for="age">Age:</label> <input type="number" id="age" name="age" /><br />
+			<label for="age">Age:</label> <input type="number" id="age" name="age" /><br />
 		<br />
 		<button type="submit">Submit</button>
 	</form>

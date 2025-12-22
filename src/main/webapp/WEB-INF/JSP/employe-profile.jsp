@@ -8,8 +8,8 @@
 </head>
 <body>
 	<h1>This is your profile you may access all your data...........</h1>
-	<h2>Name : ${emp.name}</h2>
-	 
+	<h2>Name : ${emp.id}</h2>
+	 <h2>Name : ${emp.name}</h2>
 	<h2>Age : ${emp.age}</h2>
 </body>
 </html>
