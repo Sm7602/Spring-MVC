@@ -11,7 +11,7 @@
 	<h2>Student Form</h2>
 
 	<!-- http://localhost:8080/RadheySpringMvc/ -->
-	<form action="${pageContext.request.contextPath}/getstu"
+	<form action="${pageContext.request.contextPath}/savestu"
 		method="post">
 		<label for="name">Name:</label>
 		<input type="text" id="name"name="name" />
