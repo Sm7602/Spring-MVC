@@ -22,7 +22,7 @@ public class Student_Controler {
 	}
 	
 	@PostMapping("/savestu")
-	public String getstu(@ModelAttribute Student student,Model model) {
+	public String saveStudent(@ModelAttribute Student student,Model model) {
 		System.out.println("public String getstu()........");
 		
 		StudentService.saveStudent(student);

@@ -15,9 +15,9 @@ import org.springframework.orm.hibernate5.LocalSessionFactoryBean;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 
 @EnableWebMvc
-@ComponentScan(basePackages = "com.spring.mvc")
+@ComponentScan(basePackages = "com.spring.mvc.dao")
 @Configuration
-public class Rootcofig {
+public class Rootconfig {
 
 	@Bean
 	public DataSource dataSource() {
@@ -37,7 +37,7 @@ public class Rootcofig {
 		Properties hibernateProperties = new Properties();
 		hibernateProperties.put("hibernate.dialect", "org.hibernate.dialect.MySQL8Dialect");
 		hibernateProperties.put("hibernate.show_sql", "true");
-		hibernateProperties.put("hibernate.hbm2ddl.auto", "create");
+		hibernateProperties.put("hibernate.hbm2ddl.auto", "update");
 		sessionFactory.setHibernateProperties(hibernateProperties);
 		return sessionFactory;
 	}
