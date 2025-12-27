@@ -1,6 +1,15 @@
 package com.spring.mvc.model;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
+
+@Entity
 public class Employee {
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int id;
 	private int age;
 	private String name;
@@ -11,10 +20,9 @@ public class Employee {
 		// TODO Auto-generated constructor stub
 	}
 
-	public Employee(int id,String name,int age) {
+	public Employee(String name,int age) {
 		super();
 		this.name = name;
-		this.id=id;
 		this.age = age;
 	}
 
