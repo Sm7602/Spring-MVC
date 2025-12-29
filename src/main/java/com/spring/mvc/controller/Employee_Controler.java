@@ -20,7 +20,7 @@ public class Employee_Controler {
 	@RequestMapping("/emp")
 	public String greetings() {
 		System.out.println("MyController.greetings()");
-		return "employee-form";
+		return "employe-form";
 	}
 
 	@PostMapping("/saveEmp")
@@ -31,7 +31,7 @@ public class Employee_Controler {
 		
 		model.addAttribute("emp", employee);
 
-		return "employee-profile";
+		return "employe-profile";
 	}
 
 	@GetMapping("/getEmp/{id}")

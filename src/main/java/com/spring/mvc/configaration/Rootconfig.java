@@ -12,9 +12,11 @@ import org.springframework.jdbc.datasource.DriverManagerDataSource;
 import org.springframework.orm.hibernate5.HibernateTemplate;
 import org.springframework.orm.hibernate5.HibernateTransactionManager;
 import org.springframework.orm.hibernate5.LocalSessionFactoryBean;
+import org.springframework.transaction.annotation.EnableTransactionManagement;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 
 @EnableWebMvc
+@EnableTransactionManagement
 @ComponentScan(basePackages = "com.spring.mvc.dao")
 @Configuration
 public class Rootconfig {
@@ -23,7 +25,7 @@ public class Rootconfig {
 	public DataSource dataSource() {
 		DriverManagerDataSource dataSource = new DriverManagerDataSource();
 		dataSource.setDriverClassName("com.mysql.cj.jdbc.Driver");
-		dataSource.setUrl("jdbc:mysql://localhost:3306/bhanu");
+		dataSource.setUrl("jdbc:mysql://localhost:3306/bookstore");
 		dataSource.setUsername("root");
 		dataSource.setPassword("souvik@7602");
 		return dataSource;
@@ -37,7 +39,7 @@ public class Rootconfig {
 		Properties hibernateProperties = new Properties();
 		hibernateProperties.put("hibernate.dialect", "org.hibernate.dialect.MySQL8Dialect");
 		hibernateProperties.put("hibernate.show_sql", "true");
-		hibernateProperties.put("hibernate.hbm2ddl.auto", "update");
+		hibernateProperties.put("hibernate.hbm2ddl.auto", "create");
 		sessionFactory.setHibernateProperties(hibernateProperties);
 		return sessionFactory;
 	}
