@@ -31,7 +31,18 @@
 			<artifactId>jakarta.servlet.jsp.jstl-api</artifactId>
 			<version>3.0.2</version>
 		</dependency>
-	</dependencies>
+		<dependency>
+			<groupId>Bank_singIn</groupId>
+			<artifactId>Bank_singIn</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.projectlombok/lombok -->
+<dependency>
+    <groupId>org.projectlombok</groupId>
+    <artifactId>lombok</artifactId>
+    <version>1.18.42</version>
+</dependency>
+  	</dependencies>
   <build>
     <plugins>
       <plugin>
